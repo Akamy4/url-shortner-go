@@ -26,7 +26,7 @@ const (
 
 func main() {
 	if err := godotenv.Load("local.env"); err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+		log.Println("No local.env file found, skipping...")
 	}
 
 	// INIT CONFIG
